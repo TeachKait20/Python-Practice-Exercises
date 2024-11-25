@@ -1,0 +1,26 @@
+# create & change
+file = open("C:\\Users\\pgodunov\\Desktop\\new file.txt", "w")
+file.write('My message 123')
+file.close()
+
+# read
+f = open("C:\\Users\\pgodunov\\Desktop\\new file.txt", "r")
+content = f.read()
+print(content)
+f.close()
+
+# add
+f = open("C:\\Users\\pgodunov\\Desktop\\new file.txt", "a")
+f.write(" new text")
+f.close()
+
+# open with
+with open("C:\\Users\\pgodunov\\Desktop\\new file.txt", "r") as file:
+   content = file.read()
+   print(content)
+
+print(f"new variable: {content}")
+ 
+for letter in content:
+   if letter.isdigit():
+       print(letter)

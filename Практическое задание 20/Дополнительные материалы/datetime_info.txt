@@ -1,0 +1,12 @@
+import datetime
+
+local_now = datetime.datetime.now()
+local_month = local_now.month
+
+# % + Y m d H M S
+format_datetime = local_now.strftime("%Y-%m-%d %H:%M:%S")
+
+print(f"now: {local_now}")
+print(f"month num: {local_month}")
+
+print(format_datetime)
